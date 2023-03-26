@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:description="@string/description"
+        android:name="com.Futebol_TV.AO.VIVO.NodoGO.App_go_DAISY"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/new_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/new_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AymanUltimateGuide"
+        tools:targetApi="33">
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.Worker_Bg_Activity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.Second_WebV_Prime_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:exported="false"/>
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.List_Of_WebSites_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.supprimer_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.MyRedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.First_WebV_Prime_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:exported="false" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.Boya_Guide_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.App_Main_Menu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.Activity2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.Beginning_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.Loader_Activity_Splash"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/maxSdkKey" />
+            -->
+        <meta-data android:name="applovin.sdk.key"
+            android:value="@string/maxSdkKey"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admobSdkKey" />
+    </application>
+
+</manifest>

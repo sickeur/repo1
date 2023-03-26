@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.Activity2"
+    android:background="@drawable/shape_of_bg_super"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/lato_bolditalic"
+        android:letterSpacing="0.01"
+        android:padding="5dp"
+        android:paddingHorizontal="20dp"
+        android:text="Enjoy using our Application!"
+        android:textAlignment="center"
+        android:textColor="@color/white_light"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/My_Native_Wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_below="@id/text1"
+        android:layout_marginVertical="15dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/Fan_Native_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <com.yandex.mobile.ads.nativeads.template.NativeBannerView
+            android:id="@+id/Yandex_Native_Container"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/banner"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        >
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_lightitalic"
+            android:letterSpacing="0.03"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:text="All that's left to do is to\n  read The Instructions!"
+            android:textAlignment="center"
+            android:textColor="@color/white_light"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/personilzed_super_button"
+            android:fontFamily="@font/lato_bolditalic"
+            android:text="Next"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LayoutBanner"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+
+            />
+
+        <com.yandex.mobile.ads.banner.BannerAdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yandex_banner"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

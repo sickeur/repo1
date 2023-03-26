@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.App_Main_Menu"
+    android:background="@drawable/shape_of_bg_super"
+    >
+    <LinearLayout
+        android:id="@+id/My_Native_Wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/Fan_Native_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <com.yandex.mobile.ads.nativeads.template.NativeBannerView
+            android:id="@+id/Yandex_Native_Container"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/banner"
+        android:layout_marginBottom="38dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/start"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/personilzed_super_button"
+            android:fontFamily="@font/lato_bolditalic"
+            android:padding="8dp"
+            android:text="Start"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/play_games"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:background="@drawable/personilzed_super_button"
+            android:fontFamily="@font/lato_bolditalic"
+            android:padding="8dp"
+            android:text="Play Other Games"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/more_apps"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:background="@drawable/personilzed_super_button"
+            android:fontFamily="@font/lato_bolditalic"
+            android:padding="8dp"
+            android:text="More Apps"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/personilzed_super_button"
+            android:fontFamily="@font/lato_bolditalic"
+            android:padding="8dp"
+            android:id="@+id/privacy"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Privacy Policy"
+            android:textAlignment="center"
+
+            android:textSize="22sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:padding="9dp"
+            android:text="Rate us"
+            android:id="@+id/Please_Rate_Me_Button"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personilzed_super_button"
+            android:fontFamily="@font/lato_bolditalic"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+
+        >
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/LayoutBanner"
+            android:visibility="gone"
+            />
+
+        <com.yandex.mobile.ads.banner.BannerAdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yandex_banner"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

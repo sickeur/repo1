@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.Futebol_TV.AO.VIVO.NodoGO"
+        minSdk 25
+        targetSdk 33
+        versionCode 1
+        versionName "1"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.Futebol_TV.AO.VIVO.NodoGO'
+    buildToolsVersion '32.1.0 rc1'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.7'
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.+'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.+'
+    implementation 'com.applovin:applovin-sdk:+'
+    implementation 'com.applovin.mediation:facebook-adapter:+'
+    implementation 'com.applovin.mediation:google-adapter:+'
+    implementation 'com.applovin.mediation:yandex-adapter:+'
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.google.android.gms:play-services-ads:21.3.0'
+
+    implementation 'com.yandex.android:mobileads:5.3.2'
+
+    implementation fileTree(dir: 'libs',include:['*.aar'])
+
+
+    //Onesignal
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    //LifeCycleReceiver
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+    // Kotlin + coroutines
+    def work_version = "2.7.1"
+    implementation "androidx.work:work-runtime:$work_version"
+
+
+
+
+}

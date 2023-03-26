@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Futebol_TV.AO.VIVO.NodoGO.Package_of_Activities.Beginning_Activity"
+    android:background="@drawable/shape_of_bg_super"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/My_Native_Wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/Fan_Native_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <com.yandex.mobile.ads.nativeads.template.NativeBannerView
+            android:id="@+id/Yandex_Native_Container"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/banner"
+        android:layout_below="@id/My_Native_Wrapper"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selectTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:fontFamily="@font/lato_bolditalic"
+            android:letterSpacing="0.01"
+            android:text="Please select your gender"
+            android:textAlignment="center"
+            android:textColor="@color/white_light"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/IVselect1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/IVselect2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato_lightitalic"
+                    android:gravity="center"
+                    android:letterSpacing="0.03"
+                    android:text="Male"
+                    android:textAlignment="center"
+                    android:textColor="@color/white_light"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lato_lightitalic"
+                    android:gravity="center"
+                    android:letterSpacing="0.03"
+                    android:text="Female"
+                    android:textAlignment="center"
+                    android:textColor="@color/white_light"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LayoutBanner"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+
+            />
+
+        <com.yandex.mobile.ads.banner.BannerAdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yandex_banner"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

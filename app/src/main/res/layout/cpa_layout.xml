@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_super_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="15dp"
+        >
+
+        <TextView
+            android:id="@+id/cpa_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19.5sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_black"
+            android:text="Normaly this game is not free"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:id="@+id/cpa_desctiption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17.5sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_mediumitalic"
+            android:text="You must complete at least 1 offer"
+            android:layout_marginTop="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXIT"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/apres"
+                android:layout_weight="1"
+                android:id="@+id/exit"
+                android:textSize="16.5sp"
+                android:fontFamily="@font/lato_bold"
+                android:letterSpacing="0.05"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp"
+                android:textStyle="bold|italic"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEE OFFER"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_of_bg_super"                    android:layout_weight="1"
+                android:id="@+id/offer"
+                android:textSize="16.5sp"
+                android:fontFamily="@font/lato_bold"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

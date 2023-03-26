@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222647701754",
+    "project_id": "test-8c6e5",
+    "storage_bucket": "test-8c6e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222647701754:android:6699c608631a20c368f943",
+        "android_client_info": {
+          "package_name": "com.Futebol_TV.AO.VIVO.NodoGO"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222647701754-p0u9pf1alnft1g3gqdt7vigq3dtkoie8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHXWVSc76Oqxvtil_UXnp8n2zUEzwZsIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222647701754-p0u9pf1alnft1g3gqdt7vigq3dtkoie8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
